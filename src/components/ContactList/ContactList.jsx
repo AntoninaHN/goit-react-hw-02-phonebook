@@ -19,13 +19,17 @@ function ContactList({ contacts, onRemoveContact }) {
   return <ul>{contact}</ul>;
 }
 
+ContactList.defaultProps = {
+  contacts: [],
+};
+
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       number: PropTypes.string.isRequired,
-    }).isRequired
+    })
   ).isRequired,
   onRemoveContact: PropTypes.func.isRequired,
 };

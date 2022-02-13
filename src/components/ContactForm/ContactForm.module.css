@@ -1,0 +1,11 @@
+.button {
+  padding: 15px 7px 15px 7px;
+  background-color: rgb(125, 119, 119);
+  border: 1px solid #fff;
+}
+.label {
+  margin-right: 10px;
+}
+.input:not(:last-child) {
+  margin-right: 15px;
+}
